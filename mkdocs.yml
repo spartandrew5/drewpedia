@@ -9,3 +9,4 @@ nav:
   - Home: index.md
   - Plex:
       - Getting Access (iPhone): plex/iphone-setup.md
+      - Requesting Content: plex/requesting-content.md
