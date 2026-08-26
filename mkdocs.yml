@@ -3,10 +3,20 @@ site_description: Tutorials, guides, and notes for family and friends
 site_url: https://wiki.drewpedia.org
 
 theme:
-  name: shadcn  # swap to "terminal" any time if you want to try mkdocs-terminal instead
+  name: shadcn
 
 nav:
   - Home: index.md
   - Plex:
-      - Getting Access (iPhone): plex/iphone-setup.md
+      - Plex Setup: plex/iphone-setup.md
       - Requesting Content: plex/requesting-content.md
+
+extra:
+  generator: false
+extra_css:
+  - assets/css/phone-mockup.css
+
+markdown_extensions:
+  - admonition
+  - md_in_html
+

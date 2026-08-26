@@ -3,12 +3,8 @@
 I try to keep a lot of content already on my servers but obviously I don't have everything and everyone's tastes are different. If you want to request something new and have it show up automatically, you have to request it with the Pocket app.
 
 Plex = Watch stuff
-Pocket = Request new stuff
 
-<div class="phone-mockup">
-  <video src="../assets/videos/plex-iphone-setup.mp4" controls playsinline muted></video>
-</div>
-<p class="phone-mockup-caption">Tap to play — swipe/scrub like a normal video</p>
+Pocket = Request new stuff
 
 ## Setup Steps
 
