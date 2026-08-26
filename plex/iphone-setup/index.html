@@ -18,7 +18,7 @@
     
 
 
-<title>Getting Access (iPhone)</title>
+<title>Plex Setup</title>
 
 
 
@@ -33,7 +33,7 @@
 
 <!-- Open Graph (Facebook, LinkedIn) -->
 
-<meta property="og:title" content="Getting Access (iPhone)">
+<meta property="og:title" content="Plex Setup">
 
 
 
@@ -48,7 +48,7 @@
 
 <!-- Twitter Card -->
 
-<meta name="twitter:title" content="Getting Access (iPhone)">
+<meta name="twitter:title" content="Plex Setup">
 
 
 
@@ -72,6 +72,7 @@
             --theme-accent: oklch(62.3% 0.214 259.815);
         }
     </style>
+    <link href="../../assets/css/phone-mockup.css" rel="stylesheet" />
 
     
 
@@ -307,7 +308,7 @@
         class="peer/menu-button flex items-center gap-2 rounded-md p-2 text-left ring-sidebar-ring outline-hidden transition-[width,height,padding] group-has-data-[sidebar=menu-action]/menu-item:pr-8 group-data-[collapsible=icon]:size-8! group-data-[collapsible=icon]:p-2! focus-visible:ring-2 active:bg-sidebar-accent active:text-sidebar-accent-foreground disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 data-[active=true]:font-medium data-[active=true]:text-sidebar-accent-foreground data-[state=open]:hover:bg-sidebar-accent data-[state=open]:hover:text-sidebar-accent-foreground [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground relative h-[30px] w-fit overflow-visible border border-transparent text-[0.8rem] font-medium after:absolute after:inset-x-0 after:-inset-y-1 after:z-0 after:rounded-md data-[active=true]:border-accent data-[active=true]:bg-accent 3xl:fixed:w-full 3xl:fixed:max-w-48">
 
         
-        Getting Access (iPhone)
+        Plex Setup
         
 
         
@@ -364,7 +365,7 @@
     <div class="flex flex-col gap-2">
       <div id="page-header" class="flex items-start justify-between">
         <h1 class="scroll-m-20 text-4xl font-semibold tracking-tight sm:text-3xl xl:text-4xl">
-          Getting Access (iPhone)
+          Plex Setup
         </h1>
 
         <div class="flex items-center gap-2 pt-1.5">
@@ -420,26 +421,97 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <p>Follow along below to get set up on your iPhone. If you'd rather just watch, check out the video walkthrough.</p>
-<div class="phone-mockup">
-  <video src="../assets/videos/plex-iphone-setup.mp4" controls playsinline muted></video>
-</div>
-<p class="phone-mockup-caption">Tap to play — swipe/scrub like a normal video</p>
+    <p class="guide-intro">
+Plex is the primary way to access the Movies and TV Shows I have on my server. This will be a short tutorial on how to gain access and set it up on an iPhone, however, Plex is available on almost any device and the setup is very similar. Once you properly setup access to my server, all you have to do is sign in to your Plex account on any additional devices.
+</p>
 
-<h2 id="steps">Steps</h2>
-<ol>
-<li>Download Plex from the App Store: <a href="https://apps.apple.com/us/app/plex-find-movies-and-tv-shows/id383457673">Plex</a></li>
-<li>Open the app and sign up. Using a Google account is typically the easiest.</li>
-<li>Send me a text with the email used during signup and I will give you access to the Server. Unfortunately this is the only way to do this otherwise I'd just paste a sign up URL here.</li>
-<li>You should then recieve two emails:<ol>
-<li>One email stating you have been invited to share some media in Plex. Click the "I accept the invitation" link at the bottom and sign in with your Plex account (same email you used for signup)</li>
-<li>Second email stating DrewKapnick5 (my Plex account) wants to be friends. Accept that too. I promise it is necessary or maybe I am just desparate for friends.</li>
-</ol>
-</li>
-<li>You should now have access to my Plex libraries. Sometimes it can take a few minutes to sync up. You may have to kill the app and restart it. If you are having issues, text me, we are friends now after all.</li>
-<li>Open the Plex app, tap Libraries at the bottom, tap the Movies dropdown at the top, and tap the Heart Icon for each library you are interested in. This step isn't necessary but it pins the libraries on the Home tab and makes them easier to access.</li>
-<li>You can now change libraries with the Dropdown at the top of the screen, and navigate via Recommended, Browse, or Categories tabs or search for a movie directly. You're smart, I know you can figure it out.</li>
-</ol>
+<!-- Section 1 -->
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/plex-app-store.png" alt="Downloading the Plex app on the App Store">
+  </figure>
+  <div class="step-text">
+    <h2>Download Plex</h2>
+    <p>Download Plex from the App Store: <a href="https://apps.apple.com/us/app/plex-find-movies-and-tv-shows/id383457673">Plex</a></p>
+  </div>
+</div>
+
+<!-- Section 2 -->
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/plex-signup.png" alt="Signing up for a Plex account">
+  </figure>
+  <div class="step-text">
+    <h2>Create an Account</h2>
+    <p>Open the app and sign up. Using a Google account is typically the easiest.</p>
+  </div>
+</div>
+
+<!-- Section 3 -->
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/plex-text.png" alt="Downloading the Plex app on the App Store">
+  </figure>
+  <div class="step-text">
+    <h2>Request an Invite</h2>
+    <p>Send me a text with the email used during signup and I will give you access to the Server. Unfortunately this is the only way to do this otherwise I'd just paste a sign up URL here. You should then receive two emails</p>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/plex-invite.png" alt="Signing up for a Plex account">
+  </figure>
+  <div class="step-text">
+    <h2>Accept the Invitation</h2>
+    <p>The first email will state you have been invited to share some media in Plex. Click the "I accept the invitation" link at the bottom and sign in with your Plex account (same email you used for signup).</p>
+  </div>
+</div>
+
+<!-- Section 5 -->
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/plex-friend-request.png" alt="Downloading the Plex app on the App Store">
+  </figure>
+  <div class="step-text">
+    <h2>Plz be my Friend</h2>
+    <p>The second email states DrewKapnick5 (my Plex account) wants to be friends. Accept that too. I promise it is necessary... or maybe I am just desparate for friends.</p>
+  </div>
+</div>
+
+<!-- Section 6 -->
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/plex-libraries.png" alt="Signing up for a Plex account">
+  </figure>
+  <div class="step-text">
+    <h2>Library Access</h2>
+    <p>You should now have access to my Plex libraries. Sometimes it can take a few minutes to sync up. You may have to kill the app and restart it. If you are having issues, text me, we are friends now after all.</p>
+  </div>
+</div>
+
+<!-- Section 7 -->
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/plex-favorites.png" alt="Downloading the Plex app on the App Store">
+  </figure>
+  <div class="step-text">
+    <h2>Rearrange Libraries</h2>
+    <p>Open the Plex app, tap Libraries at the bottom, tap the Movies dropdown at the top, and tap the Heart Icon for each library you are interested in. This step isn't necessary but it pins the libraries on the Home tab and makes them easier to access.</p>
+  </div>
+</div>
+
+<!-- Section 8 -->
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/plex-watch.png" alt="Signing up for a Plex account">
+  </figure>
+  <div class="step-text">
+    <h2>Start Watching</h2>
+    <p>You can now change libraries with the Dropdown at the top of the screen, and navigate via Recommended, Browse, or Categories tabs or search for a movie directly. You're smart, I know you can figure it out.</p>
+  </div>
+</div>
   </div>
   
   <script>
@@ -518,7 +590,7 @@
                         
                         <a class="text-2xl font-medium" href="./">
                             
-                            Getting Access (iPhone)
+                            Plex Setup
                             
                         </a>
                         
@@ -547,12 +619,6 @@
                                 <div id="toc" view-transition-name="toc" class="no-scrollbar overflow-y-auto px-8">
     <div class="flex flex-col gap-2 p-4 pt-0 text-sm">
         <p class="text-muted-foreground bg-background sticky top-0 h-6 text-xs">On This Page</p>
-        
-        
-        
-        
-        
-        
         
 
     </div>
