@@ -4,6 +4,8 @@ site_url: https://wiki.drewpedia.org
 
 theme:
   name: shadcn
+  hide_source_files: true
+  icon: pixelarticons:letter-d-circle
 
 nav:
   - Home: index.md
