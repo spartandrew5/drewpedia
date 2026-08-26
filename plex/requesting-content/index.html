@@ -60,7 +60,7 @@
 
 
     
-    <link href="../../img/favicon.ico" rel="icon" />
+    <link href="pixelarticons:letter-d-circle" rel="icon" />
 
     <link href="../../css/base.css" rel="stylesheet" />
     <link href="../../css/geist.css" rel="stylesheet" />
@@ -140,14 +140,7 @@
                 <span class="size-8 flex flex-row justify-center items-center">
                     
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
-    class="size-5">
-    <rect width="256" height="256" fill="none"></rect>
-    <line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="32"></line>
-    <line x1="192" y1="40" x2="40" y2="192" fill="none" stroke="currentColor" stroke-linecap="round"
-        stroke-linejoin="round" stroke-width="32"></line>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24"><path fill="currentColor" d="M18 22H6v-2h12zM6 20H4v-2h2zm14 0h-2v-2h2zM4 18H2V6h2zM15 8h-5v8h5v2H8V6h7zm7 10h-2V6h2zm-5-2h-2V8h2zM6 6H4V4h2zm14 0h-2V4h2zm-2-2H6V2h12z"/></svg>
 
 
                 </span>
@@ -370,19 +363,6 @@
 
         <div class="flex items-center gap-2 pt-1.5">
           
-          <button
-    onclick="fetch(`../..`).then((r) => r.text()).then((text) => navigator.clipboard.write([new ClipboardItem({ 'text/plain': text })]))"
-    data-slot="button" class="secondary cursor-pointer">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-copy ">
-        <path
-            d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z">
-        </path>
-        <path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"></path>
-    </svg>
-    <span class="max-md:hidden">Copy Page</span>
-</button>
-          
           
           <a data-slot="button" id="previous-button"
             class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 extend-touch-target size-8 shadow-none md:size-7"
@@ -408,46 +388,232 @@
     </div>
   </div>
   <div class="typography w-full flex-1 *:data-[slot=alert]:first:mt-0">
-    <p>I try to keep a lot of content already on my servers but obviously I don't have everything and everyone's tastes are different. If you want to request something new and have it show up automatically, you have to request it with the Pocket app.</p>
-<p>Plex = Watch stuff</p>
-<p>Pocket = Request new stuff</p>
+    <p class="guide-intro">
+I try to keep a lot of content already on my servers but obviously I don't have everything and everyone's tastes are different. If you want to request something new and have it show up automatically, you have to request it with the Pocket app.
+</p>
+
+<p class="guide-intro">
+<strong>Plex</strong> = Watch stuff &nbsp;&nbsp;|&nbsp;&nbsp; <strong>Pocket</strong> = Request new stuff
+</p>
+
 <h2 id="setup-steps">Setup Steps</h2>
-<ol>
-<li>Download Pocket from the App Store: <a href="https://apps.apple.com/us/app/pocket-for-seerr/id6746105104">Pocket</a></li>
-<li>Open the app, click Get Started and enter the URL seerr.drewpedia.org (make sure you type both "r"s in "seerr")</li>
-<li>Tap the blue check, and choose Plex Login.</li>
-<li>Tap Continue if it prompts to use "app.plex.tv: to Sign In, and sign in with your Plex account.</li>
-<li>If you see a Discover tab with a bunch of Movies and Shows displayed then you are setup.</li>
-</ol>
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-app-store.png" alt="Downloading the Pocket app on the App Store">
+  </figure>
+  <div class="step-text">
+    <h2>Download Pocket</h2>
+    <p>Download Pocket from the App Store: <a href="https://apps.apple.com/us/app/pocket-for-seerr/id6746105104">Pocket</a></p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-server.png" alt="Entering the server URL in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Enter the Server URL</h2>
+    <p>Open the app, tap Get Started, and enter the URL <strong>seerr.drewpedia.org</strong> (make sure you type both "r"s in "seerr").</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-plex.png" alt="Choosing Plex Login in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Choose Plex Login</h2>
+    <p>Tap the blue check, then choose Plex Login.</p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-plex-signin.png" alt="Signing in with Plex account in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Sign In</h2>
+    <p>Tap Continue if it prompts to use "app.plex.tv" to sign in, and sign in with your Plex account.</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-discover.png" alt="Discover tab in Pocket showing movies and shows">
+  </figure>
+  <div class="step-text">
+    <h2>Confirm You're Set Up</h2>
+    <p>If you see a Discover tab with a bunch of movies and shows displayed, then you are set up.</p>
+  </div>
+</div>
+
 <h2 id="request-steps">Request Steps</h2>
-<p>As I said, I generally try to request most popular content already myself but if I am missing something or there is a new show coming out you'd like to request then its pretty self explanatory but I'll lay out the steps anyway.
-Also, I have a good amount of storage on my server so I genuinely want you to feel free to request content that you want to watch, however its not unlimited so just keep that in mind. If we ever get to that point where space becomes an issue I may have to delete some content that noone really watches but I am not worried about that at the moment.</p>
-<ol>
-<li>Search for the movie or show you'd like with the search bar or navigating the categories</li>
-<li>For movies, simply tap Request and Request again in the popup</li>
-<li>For shows, tap Request and select the toggle per Season or the top toggle for all Seasons. </li>
-<li>If it is an upcoming movie or weekly released show, Requesting ahead of time is perfectly fine and will download the content when it becomes available.</li>
-<li>Requested content typically takes between 5-30 minutes to download and become available. If it takes longer than that don't panic, its probably just lagging begind a bit. If it takes way longer than that, report an issue or send me a text.</li>
-</ol>
+<p class="guide-intro">
+As I said, I generally try to request most popular content already myself but if I am missing something or there is a new show coming out you'd like to request then it's pretty self-explanatory, but I'll lay out the steps anyway. Also, I have a good amount of storage on my server so I genuinely want you to feel free to request content that you want to watch, however it's not unlimited so just keep that in mind. If we ever get to that point where space becomes an issue I may have to delete some content that no one really watches, but I am not worried about that at the moment.
+</p>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-search.png" alt="Searching for a movie or show in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Search</h2>
+    <p>Search for the movie or show you'd like with the search bar or by navigating the categories.</p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-request.png" alt="Requesting a movie in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Request a Movie</h2>
+    <p>Simply tap Request and Request again in the popup.</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-request-show.png" alt="Requesting a show in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Request a Show</h2>
+    <p>Tap Request and select the toggle per Season, or the top toggle for all Seasons.</p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-unreleased.png" alt="Requesting upcoming content in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Requesting Ahead of Time</h2>
+    <p>If it is an upcoming movie or weekly released show, requesting ahead of time is perfectly fine and will download the content when it becomes available.</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-requests.png" alt="Waiting for content to download in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Wait for It to Download</h2>
+    <p>Requested content typically takes between 5-30 minutes to download and become available. If it takes longer than that don't panic, it's probably just lagging behind a bit. If it takes way longer than that, report an issue or send me a text.</p>
+  </div>
+</div>
+
 <h2 id="reporting-an-issue">Reporting an Issue</h2>
-<p>The entire process is fully automated and generally does a good job, but as always with automation, sometimes mistakes happen. So if the episode audio is in another language or the video appears glitchy etc. then you can use the Pocket app to report an issue. I would prefer this over you just texting me something is wrong, but if it is a really big issue or I haven't fixed your issue then you can of course send me a text.</p>
+<p class="guide-intro">
+The entire process is fully automated and generally does a good job, but as always with automation, sometimes mistakes happen. So if the episode audio is in another language or the video appears glitchy, etc., you can use the Pocket app to report an issue. I would prefer this over you just texting me something is wrong, but if it is a really big issue or I haven't fixed your issue then you can of course send me a text.
+</p>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-issue.png" alt="Searching for a movie or show with an issue in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Find the Content</h2>
+    <p>Open the Pocket app and search for the movie/show with the issue.</p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-report-issue.png" alt="Tapping the three dots icon in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Open the Options Menu</h2>
+    <p>Tap the three dots icon in the upper right and tap "Report Issue".</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-issue-type.png" alt="Selecting a season and episode in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Select the Episode</h2>
+    <p>If it's a show, select the appropriate season/episode.</p>
+  </div>
+</div>
+
+<div class="step-section reverse">
+  <figure>
+    <img src="/assets/images/pocket-issue-desc.png" alt="Selecting an issue type and description in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Describe the Issue</h2>
+    <p>Select the Type and enter a small description of what the issue is.</p>
+  </div>
+</div>
+
+<div class="step-section">
+  <figure>
+    <img src="/assets/images/pocket-open-issues.png" alt="Reporting and viewing issues in Pocket">
+  </figure>
+  <div class="step-text">
+    <h2>Submit and Track It</h2>
+    <p>Click Report. You can view yours, or other posted issues, in the Issues tab.</p>
+  </div>
+</div>
+
+<h2 id="other-things-to-note">Other Things to Note</h2>
 <ol>
-<li>Open Pocket app and search for movie/show with the issue.</li>
-<li>Tap the Three dots icon in the upper right.</li>
-<li>If its a show, select the appropriate season/episode. </li>
-<li>Select the Type and enter a small description of what the issue is.</li>
-<li>Click Report</li>
-<li>You can view yours, or other posted issues in the Issues tab.</li>
+<li>This is just my personal server running off my apartment internet. It should be able to support a good amount of users but in theory, as I give more people access, it could start to slow down. This really shouldn't be an issue but I just wanted to call it out in case we all start noticing some slowdowns. If this truly starts becoming an issue, I'll probably already be working on it. This also means if my apartment internet is down for whatever reason, then obviously no Plex for anyone. I don't see this being an issue often but sorry if it ever happens.</li>
+<li>Shows with a weekly release date can sometimes take a bit to download after their actual release. Sometimes they download very quickly. It's kind of just up to when it becomes available. Generally if an episode is supposed to drop on Wednesday night, it will be available by Thursday morning.<ol>
+<li>At the time of writing this, some new shows occasionally have issues with weekly releases not downloading properly. I am working on fixing this, but for now if you notice it hasn't shown up a day or two after its release date, either report an issue or send me a text.</li>
 </ol>
-<h2 id="other-things-to-note">Other Things to Note:</h2>
-<ol>
-<li>This is just my personal sever running off my apartment internet. It should be able to support a good amount of users but in theory, as I give more people access, it could start to slow down. This really shouldn't be an issue but I just wanted to call it out in case we all start noticing some slowdowns. If this truly starts becoming an issue, I'll probably already be working on it. This also means if my apartment internet is down for whatever reason, then obviously no Plex for anyone. I don't see this being an issue often but sorry if it ever happens.</li>
-<li>Shows with a weekly release date can sometimes take a bit to download after its actual release. Sometimes they download very quickly. It's kind of just up to when it becomes available. Generally if an episode is supposed to drop on Wednesday night, it will be available by Thursday morning.</li>
-<li>At the time of writing this, some new shows occaisionally have issues with weekly releases not downloading properly. I am working on fixing this but for now if you notice it hasn't shown up a day or two after its release date, either report an issue or send me a text.</li>
-<li>Behind the scenes, I am trying a new method of downloading TV Shows. I won't bore you with the techno-babble but it's possible you could see a couple shows not working properly now and then. If that's the case, you guessed it, report an issue or send me a text.</li>
+</li>
+<li>Behind the scenes, I am trying a new method of downloading TV Shows. I won't bore you with the techno-babble but it's possible you could see a couple shows not working properly now and then. If that's the case, you guessed it — report an issue or send me a text.</li>
 <li>The Pocket app can sometimes be a bit slow at marking something as "Available" after requesting it. Generally it will probably be available to watch in Plex before it actually displays as available in Pocket.</li>
-<li>If you have an upcoming flight and want to download some content from my server, send me a text and we will figure something out. Plex used to let you do this for free but now they require you to have a Plex Pass (classic corporate greed). </li>
+<li>If you have an upcoming flight and want to download some content from my server, send me a text and we will figure something out. Plex used to let you do this for free but now they require you to have a Plex Pass (classic corporate greed).</li>
 </ol>
+<!-- # Requesting Content
+
+I try to keep a lot of content already on my servers but obviously I don't have everything and everyone's tastes are different. If you want to request something new and have it show up automatically, you have to request it with the Pocket app.
+
+Plex = Watch stuff
+
+Pocket = Request new stuff
+
+## Setup Steps
+
+1. Download Pocket from the App Store: [Pocket](https://apps.apple.com/us/app/pocket-for-seerr/id6746105104)
+2. Open the app, click Get Started and enter the URL seerr.drewpedia.org (make sure you type both "r"s in "seerr")
+3. Tap the blue check, and choose Plex Login.
+4. Tap Continue if it prompts to use "app.plex.tv: to Sign In, and sign in with your Plex account.
+5. If you see a Discover tab with a bunch of Movies and Shows displayed then you are setup.
+
+## Request Steps
+
+As I said, I generally try to request most popular content already myself but if I am missing something or there is a new show coming out you'd like to request then its pretty self explanatory but I'll lay out the steps anyway.
+Also, I have a good amount of storage on my server so I genuinely want you to feel free to request content that you want to watch, however its not unlimited so just keep that in mind. If we ever get to that point where space becomes an issue I may have to delete some content that noone really watches but I am not worried about that at the moment.
+
+1. Search for the movie or show you'd like with the search bar or navigating the categories
+2. For movies, simply tap Request and Request again in the popup
+3. For shows, tap Request and select the toggle per Season or the top toggle for all Seasons. 
+4. If it is an upcoming movie or weekly released show, Requesting ahead of time is perfectly fine and will download the content when it becomes available.
+5. Requested content typically takes between 5-30 minutes to download and become available. If it takes longer than that don't panic, its probably just lagging begind a bit. If it takes way longer than that, report an issue or send me a text.
+
+## Reporting an Issue
+
+The entire process is fully automated and generally does a good job, but as always with automation, sometimes mistakes happen. So if the episode audio is in another language or the video appears glitchy etc. then you can use the Pocket app to report an issue. I would prefer this over you just texting me something is wrong, but if it is a really big issue or I haven't fixed your issue then you can of course send me a text.
+
+1. Open Pocket app and search for movie/show with the issue.
+2. Tap the Three dots icon in the upper right.
+3. If its a show, select the appropriate season/episode. 
+4. Select the Type and enter a small description of what the issue is.
+5. Click Report
+6. You can view yours, or other posted issues in the Issues tab.
+
+## Other Things to Note:
+
+1. This is just my personal sever running off my apartment internet. It should be able to support a good amount of users but in theory, as I give more people access, it could start to slow down. This really shouldn't be an issue but I just wanted to call it out in case we all start noticing some slowdowns. If this truly starts becoming an issue, I'll probably already be working on it. This also means if my apartment internet is down for whatever reason, then obviously no Plex for anyone. I don't see this being an issue often but sorry if it ever happens.
+2. Shows with a weekly release date can sometimes take a bit to download after its actual release. Sometimes they download very quickly. It's kind of just up to when it becomes available. Generally if an episode is supposed to drop on Wednesday night, it will be available by Thursday morning.
+  1. At the time of writing this, some new shows occaisionally have issues with weekly releases not downloading properly. I am working on fixing this but for now if you notice it hasn't shown up a day or two after its release date, either report an issue or send me a text.
+3. Behind the scenes, I am trying a new method of downloading TV Shows. I won't bore you with the techno-babble but it's possible you could see a couple shows not working properly now and then. If that's the case, you guessed it, report an issue or send me a text.
+4. The Pocket app can sometimes be a bit slow at marking something as "Available" after requesting it. Generally it will probably be available to watch in Plex before it actually displays as available in Pocket.
+5. If you have an upcoming flight and want to download some content from my server, send me a text and we will figure something out. Plex used to let you do this for free but now they require you to have a Plex Pass (classic corporate greed).  -->
   </div>
   
   <script>
@@ -573,7 +739,7 @@ Also, I have a good amount of storage on my server so I genuinely want you to fe
         <a href="#other-things-to-note"
             class="text-muted-foreground hover:text-foreground data-[active=true]:text-foreground text-[0.8rem] no-underline transition-colors data-[depth=3]:pl-4 data-[depth=4]:pl-6"
             data-active="false" data-depth="2" onClick="deferSetActiveTocLink('#other-things-to-note');">
-            Other Things to Note:
+            Other Things to Note
         </a>
         
 
